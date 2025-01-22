@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/feedbackForm.js"></script>
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img id="logo" src="../images/logo.png" alt="Company logo IndiQuest">
+
+        <!-- Navigational links -->
+        <nav>
+            <ul id="ul1">
+                <li id = "row1"><a  href="../html/index.html">Home</a></li>
+                <li id = "row2"><a href="../html/places_to_visit.html">Places to visit</a></li>
+                <li id = "row3"><a href="../html/contact.html">Contact us</a></li>
+                <li id = "row4"><a  href="../html/subscribe.html">Subscribe</a></li>
+                <li id = "row5"><a  href="../html/myBookings.html">My Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- contact information -->
+    <h1>Contact Information</h1>
+    <section id="section1">
+        <div class="info">
+            <h3>Address</h3>
+            <p>
+                IndiQuest Headquarters
+                <br>
+                3rd Floor, Shanti Towers
+                <br>
+                Plot No. 456, MG Road
+                <br>
+                Bengaluru, Karnataka - 560001
+                <br>
+                India
+            </p>
+        </div>
+
+        <div class="info">
+            <h3>Hours of Operation</h3>
+            <p>
+                Monday to Friday: 9:00 AM – 6:00 PM
+                <br>
+                Saturday: 10:00 AM – 4:00 PM
+                <br>
+                Sunday: Closed
+            </p>
+        </div>
+
+        <div class="info">
+            <h3>Contact Details</h3>
+            <p>Phone number: +974 53564578</p>
+            <p>Email: indiquest@outlook.com</p>
+        </div>
+
+        <div id="map">
+            <h3>Location</h3>
+            <iframe id="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9823317544806!2d77.61431420917889!3d12.972981787289722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17765a88ab11%3A0x6d5c85e16281e9d1!2sMG%20road!5e0!3m2!1sen!2sqa!4v1732202151237!5m2!1sen!2sqa" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div>
+            <form action="https://sit.udst.edu.qa/processform.php" method="post" id="form1">
+                <h2 id="feedbackHeading">Let us know your feedback!</h2>
+
+                <label for="name">Full Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter your full name" onblur="validateField('name')">
+
+                <label for="message">Enter your feedback: </label>
+                <textarea name="message" id="feedback" placeholder="Enter your feedback!" onblur="validateField('feedback')"></textarea>
+
+                <div id="methods">
+                    <label for="contact" id="headingMethod">Preferred method of contact:</label>
+                    <div id="methodsOptions">
+                        <input type="radio" name="ph" id="phone" checked>
+                        <label for="ph">Phone call</label>
+                        <input type="radio" name="ph" id="email1">
+                        <label for="ph">Email</label>
+                    </div>
+                </div>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" onblur="validateField('email')">
+
+                
+            </form>
+            <!-- for displaying error message -->
+            <div id="message">
+                <span id="title"></span>
+                <br>
+                <span id="span1"></span>
+                <br>
+                <span id="span2"></span>
+                <br>
+                <span id="span3"></span>
+            </div>
+
+            
+
+            <div id="buttons">
+                <input type="button" value="Submit Details" id="submitButton" onclick="return check_all()">
+                <input type="button" value="Remove Details" id="cancelButton" onclick="reset_content()">
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+        <p>
+            IndiQuest © 2024 | All Rights Reserved
+            Website Design and Development by IndiQuest Team
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <link rel="stylesheet" href="../css/tickets.css">
+    <script src="../js/tickets.js"></script>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img id="logo" src="../images/logo.png" alt="Company logo IndiQuest">
+
+        <!-- Navigational links -->
+        <nav>
+            <ul id="ul1">
+                <li id = "row1"><a  href="../html/index.html">Home</a></li>
+                <li id = "row2"><a href="../html/places_to_visit.html">Places to visit</a></li>
+                <li id = "row3"><a href="../html/contact.html">Contact us</a></li>
+                <li id = "row4"><a  href="../html/subscribe.html">Subscribe</a></li>
+                <li id = "row5"><a  href="../html/myBookings.html">My Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+        
+        <h1 id="bookTickets">Book Tickets</h1>
+
+        <form id= "form1" action="https://sit.udst.edu.qa/processform.php" method="post">
+            
+                <fieldset>
+                    <div id = "fieldset1">
+                        
+                        <label for="travelDate">Choose a Date: </label>
+                        <input type="date" name="travelDate" id="date1" onblur="validateField('date1')">
+
+                        <label for="timeSlot">Time Slot: </label>
+                        <select name="timeSlot" id="time">
+                            <option value="8am - 10am" selected>8am - 10am</option>
+                            <option value="10am - 12pm">10am - 12pm</option>
+                            <option value="12am - 1pm">12am - 1pm</option>
+                            <option value="2pm - 4pm">2pm - 4pm</option>
+                            <option value="4pm - 6pm">4pm - 6pm</option>
+                            <option value="6pm - 8pm">6pm - 8pm</option>
+                        </select>
+
+                        <label for="ticketAdult">Number of Adults: </label>
+                        <input type="number" name="ticketAdult" id="Adults" min="0" max="15" onblur="validateField('Adults')">
+
+                        <label for="age">Number of Children: </label>
+                        <input type="number" name="age" id="Children" min="0" max="15" onblur="validateField('Children')">
+
+                        <label for="name">Full Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" onblur="validateField('name')">
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" onblur="validateField('email')">
+
+                        <label for="reemail">Reconfirm Email: </label>
+                        <input type="reemail" name="reemail" id="reemail" placeholder="Rewrite your email" onblur="validateField('reemail')">
+
+                        <label for="number">Phone Number: </label>
+                        <input type="text" name="number" id="number" value = "+974" onblur="validateField('number')">
+
+                        
+                        <label for="payment" id="headingMethod">Payment Method:</label>
+                        <div id="methodsOptions">
+                            <div class="creditCardOptions">
+                                <label for="card">Credit Card
+                                    <input type="radio" name="card" id="creditDebit" checked>
+                                </label>
+                                
+                            </div>
+                            <div class="creditCardOptions">
+                                <label for="card">Google Pay
+                                    <input type="radio" name="card" id="googlePay">
+                                </label>
+                            </div>
+                        </div>
+                        <div id="errorMessage">
+                            <span id="title"></span>
+                            <br>
+                            <span id="span1"></span>
+                            <br>
+                            <span id="span2"></span>
+                            <br>
+                            <span id="span3"></span>
+                            <br>
+                            <span id="span4"></span>
+                            <br>
+                            <span id="span5"></span>
+                            <br>
+                            <span id="span6"></span>
+                            <br>
+                            <span id="span7"></span>
+                        </div>
+                       
+                    </div>
+                </fieldset>
+
+                <div id="buttons">
+                    <input type="button" value="Submit Details" id="submitButton" onclick="return check_all()">
+                    <input type="button" value="Cancel" id="cancelButton" onclick="return reset_content()">
+                </div>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>
+            IndiQuest © 2024 | All Rights Reserved
+            Website Design and Development by IndiQuest Team
+        </p>
+    </footer>
+    
+    <script src="../js/extractHeading.js"></script>
+</body>
+</html>

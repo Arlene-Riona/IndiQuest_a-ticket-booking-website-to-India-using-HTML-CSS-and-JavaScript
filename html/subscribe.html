@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <script src="../js/subscribeForm.js"></script>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img id="logo" src="../images/logo.png" alt="Company logo IndiQuest">
+
+        <!-- Navigational links -->
+        <nav>
+            <ul id="ul1">
+                <li id = "row1"><a  href="../html/index.html">Home</a></li>
+                <li id = "row2"><a href="../html/places_to_visit.html">Places to visit</a></li>
+                <li id = "row3"><a href="../html/contact.html">Contact us</a></li>
+                <li id = "row4"><a  href="../html/subscribe.html">Subscribe</a></li>
+                <li id = "row5"><a  href="../html/myBookings.html">My Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 id="subscribeIntro">Welcome to the Subscribe Us Page!</h1>
+        <p>
+            Join the IndiQuest family and stay updated with exclusive offers, travel tips, and the latest updates on must-visit attractions across India. 
+            Let’s embark on incredible journeys together!
+        </p>
+    </section>
+
+    <section id="section1">
+        <form id= "form1" action="https://sit.udst.edu.qa/processform.php" method="post">
+            
+                <fieldset>
+                    <div id = "fieldset1">
+                        <!-- User details -->
+                        <h2>User Details</h2>
+
+                        <label for="name">Full Name: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name" onblur="validateField('name')">
+                        
+
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username" onblur="validateField('username')">
+                        
+
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" onblur="validateField('password')">
+                        
+
+                        <label for="password">Reconfirm Password: </label>
+                        <input type="password" name="repassword" id="repassword" onblur="validateField('repassword')">
+                        
+
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" onblur="validateField('email')">
+                        
+
+                        <label for="reemail">Reconfirm Email: </label>
+                        <input type="reemail" name="reemail" id="reemail" placeholder="Rewrite your email" onblur="validateField('reemail')">
+                        
+
+                        <label for="number">Phone Number: </label>
+                        <input type="text" name="number" id="number" value = "+974" onblur="validateField('number')">
+                        
+
+                        <label for="dob">Date of Birth: </label>
+                        <input type="date" name="dob" id="dob" onblur="validateField('dob')">
+                        
+
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" id="age" min="1" max="150" placeholder="Enter your age" onblur="validateField('age')">
+                        
+                    </div>
+                </fieldset>
+                
+                
+            
+                <fieldset>
+                    <div id = "fieldset2">
+                        <!-- Shipping details -->
+                        <h2>Shipping Information</h2>
+
+                        <label for="building">Building Number: </label>
+                        <input type="text" name="building" id="building" placeholder="Enter your building number" onblur="validateField('building')">
+                        
+
+                        <label for="street">Street Name: </label>
+                        <input type="street" name="street" id="street" placeholder="Enter your street name" onblur="validateField('street')">
+                        
+
+                        <label for="city">City Name: </label>
+                        <select name="city" id="city">
+                            <option value="doha" selected>Doha</option>
+                            <option value="alkhor">Al Khor</option>
+                            <option value="dukhan">Dukhan</option>
+                            <option value="Lusail">Lusail</option>
+                            <option value="abusamra">Abu Samra</option>
+                            <option value="mesaieed">Mesaieed</option>
+                            <option value="almurqab">Al Murqab</option>
+                        </select>
+                        
+
+                        <label for="subscribe">Do you like to subscribe to our newsletter: </label>
+                        <input type="checkbox" name="subscribe" id="subscribe" value="Yes">
+                        
+                    </div>
+                </fieldset>
+
+                <div id="errorMessages">
+                    <!-- to show error messages to the user -->
+                    <span id="title"></span>
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    <span id="span5"></span>
+                    <span id="span6"></span>
+                    <span id="span7"></span>
+                    <span id="span8"></span>
+                    <span id="span9"></span>
+                    <span id="span10"></span>
+                    <span id="span11"></span>
+                    <span id="span12"></span>
+                    <span id="span13"></span>
+                </div>
+
+                <div id="buttons">
+                    <input type="button" value="Submit Details" id="submitButton" onclick="return check_all()">
+                    <input type="button" value="Remove Details" id="cancelButton" onclick="reset_content()">
+                </div>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <p>
+            IndiQuest © 2024 | All Rights Reserved
+            Website Design and Development by IndiQuest Team
+        </p>
+    </footer>
+</body>
+</html>

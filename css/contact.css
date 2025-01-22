@@ -1,0 +1,88 @@
+#section1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#map{
+    grid-column: 1/span 3;
+    justify-self: center;
+}
+
+.info{
+    border: 2px solid #fff4b7;
+    background-color: #113a63;
+}
+
+#section2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#section2 div form{
+    padding-right: 50px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #113a63;
+    gap: 10px;
+    padding-bottom: 50px;
+    border: 2px solid #fff4b7;
+}
+
+#section2 div form label{
+    text-align: center;
+    color: #fff4b7;
+}
+
+#headingMethod{
+    grid-column: 1/span 2;
+    text-align: center;
+}
+
+#feedbackHeading{
+    grid-column: 1/span 2;
+}
+
+#methods{
+    grid-column: 1/span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#methodsOptions{
+    grid-column: 3/span 2;
+}
+
+/* buttons */
+#buttons{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    height: 5vh;
+}
+
+#submitButton{
+    width: 50%;
+    justify-self: right;
+    background-color: #B03052;
+    color: white;
+}
+
+#cancelButton{
+    width: 50%;
+    justify-self: left;
+    background-color: #B03052;
+    color: white;
+}
+
+#message{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+#form1 label{
+    font-size: 19px;
+}

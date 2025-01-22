@@ -1,0 +1,28 @@
+#table1{
+    width: 100%;
+    border: 2px solid #B03052;
+    padding: 30px;
+    background-color: #113a63;
+}
+
+
+#table1 tbody tr{
+    text-align: center;
+    font-size: 19px;
+}
+
+#table1 thead tr th{
+    font-size: 19px;
+    color: #FFF4B7;
+
+}
+
+#table1 tbody tr td{
+    color: #FFF4B7;
+    padding: 10px;
+}
+
+
+#secInfo{
+    height: 100vh;
+}

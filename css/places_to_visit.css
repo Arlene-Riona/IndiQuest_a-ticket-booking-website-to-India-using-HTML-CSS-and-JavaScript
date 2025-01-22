@@ -1,0 +1,44 @@
+#section1, #section2, #section3, #section4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 13px;
+    margin-bottom: 100px;
+}
+
+#heading{
+    grid-column: 1/span 4;
+}
+
+.places{
+    text-align: center;
+    border: 2px solid #fff4b7;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.places img{
+    width: 100%;
+    border: 2px solid black;
+    margin-right: 2px; 
+}
+
+#img1{
+    height: 30%;
+}
+
+.content{
+    height: 100%;
+}
+
+.booking{
+    text-decoration: none;
+    color: white;
+    background-color: #B03052;
+    padding: 6px;
+    border-radius: 12px;
+    text-align: center;
+    height: 3vh;
+    align-self: self-end;
+}

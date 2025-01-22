@@ -1,0 +1,22 @@
+#fieldset1{
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+#methodsOptions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.creditCardOptions{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#errorMessage{
+    grid-row: 10/11;
+    grid-column: 1/ span4;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 19px;
+}
